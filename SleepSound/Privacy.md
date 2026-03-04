@@ -79,7 +79,7 @@ twohas(이하 '개발자')는 'SleepSound - 수면용 백색소음'(이하 '앱'
 
 이용자는 언제든지 아래 권리를 행사할 수 있습니다.
 
-- Firebase 데이터 삭제 요청: [[MASKED_EMAIL]]
+- Firebase 데이터 삭제 요청: [dev@twohas.dev]
 - 앱 삭제를 통한 기기 내 저장 데이터 완전 삭제
 
 ---
@@ -94,4 +94,4 @@ twohas(이하 '개발자')는 'SleepSound - 수면용 백색소음'(이하 '앱'
 
 개인정보 처리에 관한 문의는 아래로 연락해 주세요.
 
-- **이메일**: [MASKED_EMAIL]
+- **이메일**: dev@twohas.dev
