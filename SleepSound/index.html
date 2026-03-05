@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SleepSound - 수면을 위한 백색소음</title>
+  <meta name="description" content="추천 믹스와 빠른 재생으로 10초 안에 수면 사운드를 시작하세요. 슬립 타이머, 페이드아웃, 백그라운드 재생 지원.">
+  <meta property="og:title" content="SleepSound - 수면을 위한 백색소음">
+  <meta property="og:description" content="추천 믹스와 빠른 재생으로 10초 안에 수면 사운드를 시작하세요.">
+  <meta property="og:url" content="https://twohas.dev/SleepSound/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://twohas.dev/SleepSound/">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Hero — 앱 소개 */
+    .app-hero {
+      padding-top: calc(64px + var(--space-2xl));
+      padding-bottom: var(--space-2xl);
+      text-align: center;
+    }
+    .app-icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 28px;
+      margin: 0 auto var(--space-md);
+      display: block;
+      object-fit: cover;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+    .app-name {
+      font-size: var(--font-size-2xl);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: var(--space-xs);
+    }
+    .app-tagline {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-lg);
+    }
+    .store-btn {
+      display: inline-block;
+      background: #000;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      transition: opacity var(--transition);
+    }
+    .store-btn:hover {
+      color: #fff;
+      opacity: 0.8;
+    }
+    .store-btn-inner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .store-btn-text-sub {
+      font-size: 11px;
+      font-weight: 400;
+      opacity: 0.8;
+      display: block;
+      text-align: left;
+    }
+    .store-btn-text-main {
+      font-size: 17px;
+      font-weight: 700;
+      display: block;
+      text-align: left;
+    }
+
+    /* 스크린샷 */
+    .screenshots {
+      display: flex;
+      gap: var(--space-md);
+      overflow-x: auto;
+      padding-bottom: var(--space-sm);
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: var(--space-xl);
+    }
+    .screenshots img {
+      width: 200px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+      flex-shrink: 0;
+    }
+
+    /* 기능 */
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-md);
+      margin-top: var(--space-lg);
+    }
+    .feature-item {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      padding: var(--space-lg);
+    }
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: var(--space-xs);
+    }
+    .feature-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .feature-desc {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    @media (max-width: 480px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+      .screenshots img {
+        width: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">Twohas</a>
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span>EN</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="app-hero">
+    <div class="container">
+      <img class="app-icon" src="asset/sleep-sounds-icon-1024x1024.png" alt="SleepSound 앱 아이콘" />
+      <h1 class="app-name">SleepSound</h1>
+      <p class="app-tagline">
+        <span data-lang-kr>수면을 위한 백색소음</span>
+        <span data-lang-en>White Noise for Better Sleep</span>
+      </p>
+      <a class="store-btn" href="https://apps.apple.com/app/id6745934065" target="_blank" rel="noopener">
+        <div class="store-btn-inner">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <div>
+            <span class="store-btn-text-sub" data-lang-kr>App Store에서 다운로드</span>
+            <span class="store-btn-text-sub" data-lang-en>Download on the</span>
+            <span class="store-btn-text-main">App Store</span>
+          </div>
+        </div>
+      </a>
+
+      <div class="screenshots">
+        <img src="asset/screenshots/01_home.png" alt="홈 화면" />
+        <img src="asset/screenshots/02_sounds.png" alt="사운드 화면" />
+        <img src="asset/screenshots/03_player.png" alt="플레이어 화면" />
+        <img src="asset/screenshots/04_settings.png" alt="설정 화면" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Features</p>
+      <h2 class="section-title">
+        <span data-lang-kr>주요 기능</span>
+        <span data-lang-en>Key Features</span>
+      </h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">&#x26A1;</div>
+          <div class="feature-title">
+            <span data-lang-kr>추천 믹스</span>
+            <span data-lang-en>Recommended Mixes</span>
+          </div>
+          <p class="feature-desc">
+            <span data-lang-kr>수면에 최적화된 사운드 조합을 10초 안에 바로 재생.</span>
+            <span data-lang-en>Start sleep-optimized sound mixes in under 10 seconds.</span>
+          </p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">&#x1F3B5;</div>
+          <div class="feature-title">
+            <span data-lang-kr>다양한 백색소음</span>
+            <span data-lang-en>Diverse White Noise</span>
+          </div>
+          <p class="feature-desc">
+            <span data-lang-kr>자연·날씨·생활·사람·기계·분위기 6가지 카테고리.</span>
+            <span data-lang-en>6 categories: nature, weather, life, people, machine, ambience.</span>
+          </p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">&#x1F39A;</div>
+          <div class="feature-title">
+            <span data-lang-kr>사운드 믹싱</span>
+            <span data-lang-en>Sound Mixing</span>
+          </div>
+          <p class="feature-desc">
+            <span data-lang-kr>여러 사운드를 조합하고 개별 볼륨으로 나만의 조합 완성.</span>
+            <span data-lang-en>Combine sounds and adjust individual volumes to create your mix.</span>
+          </p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">&#x23F2;</div>
+          <div class="feature-title">
+            <span data-lang-kr>슬립 타이머</span>
+            <span data-lang-en>Sleep Timer</span>
+          </div>
+          <p class="feature-desc">
+            <span data-lang-kr>원하는 시간에 자동 종료. 페이드아웃으로 자연스럽게.</span>
+            <span data-lang-en>Auto-stop at your set time with a smooth fade-out.</span>
+          </p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">&#x1F4F2;</div>
+          <div class="feature-title">
+            <span data-lang-kr>백그라운드 재생</span>
+            <span data-lang-en>Background Playback</span>
+          </div>
+          <p class="feature-desc">
+            <span data-lang-kr>화면을 꺼도 끊김 없이 계속 재생.</span>
+            <span data-lang-en>Plays continuously even with the screen off.</span>
+          </p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">&#x1F512;</div>
+          <div class="feature-title">
+            <span data-lang-kr>광고 제거</span>
+            <span data-lang-en>Ad-Free</span>
+          </div>
+          <p class="feature-desc">
+            <span data-lang-kr>인앱 결제로 광고 없이 수면에만 집중.</span>
+            <span data-lang-en>Remove ads via in-app purchase for uninterrupted sleep.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="/" data-lang-kr>홈</a>
+        <a href="/" data-lang-en>Home</a>
+        <a href="/SleepSound/Privacy.html" data-lang-kr>개인정보 처리방침</a>
+        <a href="/SleepSound/Privacy.html" data-lang-en>Privacy Policy</a>
+        <a href="mailto:[MASKED_EMAIL]" data-lang-kr>문의</a>
+        <a href="mailto:[MASKED_EMAIL]" data-lang-en>Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Twohas. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var html = document.documentElement;
+      var btn = document.getElementById('langToggle');
+      var saved = localStorage.getItem('twohas-lang');
+      var lang = saved === 'en' ? 'en' : 'ko';
+
+      function setLang(l) {
+        lang = l;
+        html.setAttribute('lang', lang);
+        btn.querySelector('span').textContent = lang === 'ko' ? 'EN' : 'KR';
+        localStorage.setItem('twohas-lang', lang);
+      }
+
+      setLang(lang);
+
+      btn.addEventListener('click', function () {
+        setLang(lang === 'ko' ? 'en' : 'ko');
+      });
+    })();
+  </script>
+
+</body>
+</html>
