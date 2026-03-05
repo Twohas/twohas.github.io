@@ -1,14 +1,2 @@
 title: twohas
 url: "https://twohas.dev"
-
-markdown: kramdown
-kramdown:
-  input: GFM
-
-plugins:
-  - jekyll-relative-links
-
-relative_links:
-  enabled: true
-  collections: true
-
