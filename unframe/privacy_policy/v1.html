@@ -48,7 +48,7 @@
   <main class="page-content">
     <article class="container">
       <h1>개인정보 처리방침</h1>
-      <p class="effective-date">비공개 베타 검토용 초안 · 작성일: 2026년 10월 6일 · 수정일: 2026년 10월 8일 · 시행일: 미정</p>
+      <p class="effective-date">비공개 베타 검토용 초안 · 작성일: 2026년 10월 6일 · 수정일: 2026년 10월 8일 · 시행일: 2026년 10월 8일</p>
 
       <aside class="document-notice" aria-label="초안 상태 안내">
         <p><strong>이 문서는 검토용 원문 초안이며, 아직 가입 동의에 사용하지 않습니다.</strong></p>
@@ -118,7 +118,8 @@
         <caption>자체 데이터와 구분해 확인하는 보관·삭제 범위</caption>
         <tbody>
           <tr><th scope="row">Firebase Crashlytics</th><td><a href="https://firebase.google.com/support/privacy">Firebase 공식 안내</a>에 따르면 크래시 스택과 관련 식별자는 <strong>90일 보관 후 운영 시스템과 백업에서 삭제하는 절차를 시작</strong>합니다. 탈퇴 시 이미 전송된 모든 기록이 즉시 삭제되는 기준은 아닙니다. <span class="pending">[게시 전 확인: 실제 수집 항목과 개별 삭제 요청의 지원 범위·절차]</span></td></tr>
-          <tr><th scope="row">PostHog·AI 제공자·이메일 업체</th><td>외부에 저장된 기록은 계약과 실제 설정에 따른 기간·삭제 절차를 확인해 안내합니다. 자체 상세 기록의 30일 기준을 외부 기록 전체에 일괄 적용하지 않습니다. <span class="pending">[게시 전 확정: 업체별 실제 보관기간·처리 근거·삭제 요청 절차]</span></td></tr>
+          <tr><th scope="row">PostHog·AI 제공자</th><td>외부에 저장된 기록은 계약과 실제 설정에 따른 기간·삭제 절차를 확인해 안내합니다. 자체 상세 기록의 30일 기준을 외부 기록 전체에 일괄 적용하지 않습니다. <span class="pending">[게시 전 확정: 업체별 실제 보관기간·처리 근거·삭제 요청 절차]</span></td></tr>
+          <tr><th scope="row">문의 이메일(Gmail)</th><td>문의 메일은 운영자의 Google Gmail 메일함에서 수신·보관합니다. 일반 문의·신고는 처리 완료일부터 30일 보관한 뒤 관련 메일과 첨부파일을 휴지통에서도 완전히 삭제합니다. Google 서버·백업의 후속 정리는 <a href="https://policies.google.com/technologies/retention?hl=ko">Google의 별도 보관·삭제 정책</a>과 법률·보안 목적 등의 예외를 따릅니다. 운영자의 메일 삭제 시점에 모든 서버·백업 사본이 즉시 삭제되는 것은 아닙니다.</td></tr>
           <tr><th scope="row">기기 저장</th><td>로그아웃과 탈퇴 시 앱이 관리하는 입력 초안·최근 입력·설정·인증 저장값과 메모리 캐시를 정리합니다. 외부 SDK의 자체 저장소, 이미 전송된 진단 기록과 운영체제 백업까지 삭제하는 기능은 아니며, 해당 기록은 외부 서비스의 별도 기준을 따릅니다.</td></tr>
           <tr><th scope="row">백업</th><td>이미 삭제한 정보가 백업에 남는 경우 접근을 제한하고 확인된 백업 만료 주기에 따라 정리합니다. 복원 시에는 기존 삭제 요청을 다시 적용합니다. Supabase의 요금제별 백업 제공기간은 <a href="https://supabase.com/docs/guides/platform/backups">공식 안내</a>에서 확인할 수 있으며, DB 백업에 Storage 이미지 파일 자체는 포함되지 않습니다. <span class="pending">[게시 전 확정: 실제 프로젝트의 백업 설정·보관기간·만료 및 복원 후 재삭제 절차]</span></td></tr>
         </tbody>
@@ -131,7 +132,8 @@
       <p>실제 인물의 건강·성생활 등 민감정보는 이야기 이용을 위해 요구하는 항목이 아닙니다. 이용자가 입력했다는 사실이나 일반적인 가입 동의만으로 민감정보 처리에 별도로 동의한 것으로 취급하지 않습니다. <span class="pending">[게시 전 확정: 민감정보가 포함된 입력·생성 결과·신고의 접수·저장·AI 전송 처리 원칙과 필요한 별도 동의 또는 법령상 근거]</span></p>
       <p>Google Gemini를 통한 생성에는 활성 결제 계정에 연결된 Gemini Developer API 유료 Tier 1을 사용합니다. Google의 <a href="https://ai.google.dev/gemini-api/terms#paid-services">유료 API 약관</a>에 따라 입력과 생성 결과는 일반 모델 학습이나 제품 개선에 사용되지 않습니다. Unframe은 이용자의 입력·생성 결과를 학습·제품 개선용 데이터셋이나 로그 피드백으로 Google에 별도 공유하지 않습니다.</p>
       <p>Google은 안전·정책 위반 방지와 필요한 법적 공개를 위해 입력·문맥·응답을 55일 보관하며, 해당 기록은 정책 집행용 모델 학습에 사용될 수 있습니다. 자세한 내용은 <a href="https://ai.google.dev/gemini-api/docs/usage-policies">Google의 남용 모니터링 정책</a>에서 확인할 수 있습니다. 별도 학습용 공유를 하지 않는 방침이 이 기록의 보관·처리까지 중단한다는 뜻은 아닙니다.</p>
-      <p>Gemini 외 AI 제공자의 실제 활성 상품·입력과 결과 보관·학습 조건 및 운영자의 자체 학습 활용 여부는 게시 전에 확인합니다. <span class="pending">[게시 전 확정: Gemini 외 제공자의 실제 상품·학습 조건, 운영자의 자체 학습 활용 여부, 활용하는 경우의 근거·항목·보관기간·거부 방법]</span></p>
+      <p>OpenAI의 <a href="https://developers.openai.com/api/docs/guides/your-data">공식 API 데이터 정책</a>에 따라 API 입력·생성 결과는 명시적으로 학습용 공유를 선택하지 않으면 모델 학습이나 개선에 사용되지 않습니다. Unframe의 배포 API 키를 발급한 조직에서는 피드백, 평가·미세조정 데이터, API 입출력 공유를 모두 비활성화하고 있습니다.</p>
+      <p>학습용 공유 설정과 API 데이터 보관은 구분합니다. OpenAI는 남용 모니터링 기록을 기본 최대 30일 보관하며 법률·위해 방지 목적의 예외가 있습니다. 현재 OpenAI 이야기 모델의 생성용 캐시는 최대 24시간 남을 수 있으며, 일부 이미지·파일은 안전 검토를 위해 보관될 수 있습니다. 운영자의 자체 학습 활용 여부는 별도로 확정해야 합니다.</p>
       <p>이 방침을 확인했다는 사실만으로 별도의 모델 학습이나 새로운 목적의 활용에 동의한 것으로 취급하지 않습니다. 별도 동의가 필요한 처리는 구분하여 안내합니다. 부적절한 생성 결과나 개인정보 포함이 의심되는 결과는 아래 문의 채널로 신고할 수 있습니다.</p>
       <h3>입력과 생성 결과의 공개 범위</h3>
       <p>이번 베타에는 계정 정보나 이용자가 입력·생성한 이야기를 다른 이용자에게 게시하는 기능이 없습니다. 생성 이미지는 비공개 저장소에서 기한이 있는 접근 주소로 제공합니다. 이 주소를 다른 사람에게 전달하면 유효기간 동안 이미지를 열 수 있으므로 공유에 주의하세요.</p>
@@ -142,11 +144,11 @@
       <table class="privacy-table">
         <caption>현재 확인한 외부 처리 경로</caption>
         <tbody>
-          <tr><th scope="row">Supabase</th><td>인증, 데이터베이스, 서버 기능과 이미지 저장을 제공합니다. 계정·승인·동의, 이야기·이미지, 생성 사용량과 관련 요청 정보를 처리합니다.</td></tr>
-          <tr><th scope="row">AI 제공자</th><td>Dev의 활성 모델 목록에는 OpenAI와 Google Gemini의 이야기·이미지 모델이 있습니다. 이용자가 선택한 모델에 해당하는 제공자에게 제4항의 생성용 정보가 전달됩니다. 두 제공자에게 항상 동시에 전송하는 것은 아닙니다. <span class="pending">[게시 전 확정: 적용 계약 법인과 배포 키의 조직·프로젝트 연결]</span></td></tr>
-          <tr><th scope="row">PostHog</th><td>앱·서버 진단 로그와 SDK가 처리하는 일부 앱·기기·사용 정보를 전송합니다. <span class="pending">[게시 전 확정: 실제 자동 수집 항목, 계약·보관 조건]</span></td></tr>
+          <tr><th scope="row">Supabase Pte. Ltd.</th><td>인증, 데이터베이스, 서버 기능과 이미지 저장을 제공합니다. 계정·승인·동의, 이야기·이미지, 생성 사용량과 관련 요청 정보를 처리합니다. 개인정보 연락처: <a href="mailto:privacy@supabase.io">privacy@supabase.io</a>. <a href="https://supabase.com/legal/customer-resources/data-processing-addendum">데이터 처리 약정</a>을 확인할 수 있습니다.</td></tr>
+          <tr><th scope="row">AI 제공자</th><td>Dev의 활성 모델 목록에는 OpenAI와 Google Gemini의 이야기·이미지 모델이 있습니다. 이용자가 선택한 모델에 해당하는 제공자에게 제4항의 생성용 정보가 전달됩니다. 두 제공자에게 항상 동시에 전송하는 것은 아닙니다. <span class="pending">[게시 전 확정: 적용 계약 법인]</span></td></tr>
+          <tr><th scope="row">PostHog, Inc.</th><td>앱·서버 진단 로그와 SDK가 처리하는 일부 앱·기기·사용 정보를 US Cloud로 전송합니다. Logs 보관기간은 현재 14일이며 이벤트·메타데이터는 별도 조건을 따릅니다. 개인정보 연락처: <a href="mailto:privacy@posthog.com">privacy@posthog.com</a>. <span class="pending">[게시 전 확정: 실제 자동 수집 항목과 적용 계약·이벤트 보관 조건]</span></td></tr>
           <tr><th scope="row">Firebase Crashlytics</th><td>크래시·오류·스택, 앱 버전·플랫폼, 로그인 계정 식별자와 SDK의 진단 정보를 처리합니다. <span class="pending">[게시 전 확정: 실제 SDK 수집 항목, 계약·보관·삭제 조건]</span></td></tr>
-          <tr><th scope="row">문의 이메일 운영 업체</th><td>이메일 주소, 문의·신고 내용과 첨부파일을 저장·전달합니다. <span class="pending">[게시 전 확정: 이메일 호스팅 업체와 보관 조건]</span></td></tr>
+          <tr><th scope="row">문의 이메일(Google Gmail)</th><td>발신자 이메일 주소, 문의·신고 내용과 첨부파일을 운영자의 개인 Google 계정의 Gmail 메일함에서 수신·보관하고 문의 답변에 이용합니다. <a href="https://policies.google.com/terms?gl=kr&amp;hl=ko">Google의 한국 국가 버전 일반 약관</a>은 제공자를 Google LLC로 안내합니다. Google은 Gmail 제공·보안·스팸 방지 등에 필요한 처리를 수행합니다. <a href="https://support.google.com/mail/answer/10434152?hl=ko">Gmail 개인정보 안내</a>를 확인할 수 있습니다. <span class="pending">[게시 전 확정: 메일 전달 경로의 처리 조건]</span></td></tr>
         </tbody>
       </table>
       <p>외부 업체가 운영자를 대신해 개인정보를 처리하는 경우와 독립적인 목적으로 제공받는 경우를 구분합니다. 제3자 제공에 해당하는 경우에는 제공받는 자·목적·항목·보관기간·법적 근거와 필요한 동의를 구체적으로 안내합니다. 이 초안은 모든 외부 전송을 위탁으로 확정하거나 포괄적인 제공 동의를 받는 문서가 아닙니다.</p>
@@ -157,11 +159,12 @@
       <table class="privacy-table">
         <caption>이전 시점·방법과 게시 전 확인할 사항</caption>
         <tbody>
-          <tr><th scope="row">Supabase</th><td>계정 발급·로그인·서비스 요청·데이터 저장 시 네트워크로 전달하며 Dev 데이터베이스의 저장 리전은 일본 도쿄입니다. 공식 <a href="https://supabase.com/legal/customer-resources/data-processing-addendum">데이터 처리 약정</a>에는 Supabase Pte. Ltd.와 연락처 <a href="mailto:privacy@supabase.io">privacy@supabase.io</a>가 안내되어 있습니다. 지정 저장 리전과 지원·하위처리자의 추가 처리는 구분합니다. <span class="pending">[게시 전 확정: 실제 베타 대상 환경, 적용 계약과 추가 처리 국가, 로그·백업 보관 범위]</span></td></tr>
-          <tr><th scope="row">선택된 AI 제공자</th><td>이용자가 생성을 요청하면 서버에서 AI API로 생성 문맥과 필요한 이미지 등을 전달합니다. Gemini의 학습 관련 처리와 안전 기록은 <a href="#ai">제4항</a>에서 안내합니다. <span class="pending">[게시 전 확정: 실제 제공자·연락처·처리 국가·전체 보관 범위, Gemini 외 제공자의 학습 조건]</span></td></tr>
-          <tr><th scope="row">PostHog</th><td>앱·서버의 진단 처리 시 전달합니다. 서버 코드는 미국용 수집 주소를 사용합니다. <span class="pending">[게시 전 확정: 최종 처리 국가, 계약 법인·연락처·보관기간, 앱 SDK 전송 경로]</span></td></tr>
-          <tr><th scope="row">Firebase Crashlytics</th><td>앱 실행·계정 상태 변경·오류 기록 및 SDK 전송 시 전달될 수 있습니다. <span class="pending">[게시 전 확정: 계약 법인·연락처·처리 국가·보관기간]</span></td></tr>
-          <tr><th scope="row">문의 이메일</th><td>문의 전송·답변·메일 보관 과정에서 처리됩니다. <span class="pending">[게시 전 확정: 국외 이전 여부, 해당 시 업체·연락처·국가·보관기간]</span></td></tr>
+          <tr><th scope="row">Supabase Pte. Ltd.</th><td>계정 발급·로그인·서비스 요청·데이터 저장 시 네트워크로 전달하며 Dev 데이터베이스의 저장 리전은 일본 도쿄입니다. 개인정보 연락처는 <a href="mailto:privacy@supabase.io">privacy@supabase.io</a>입니다. <a href="https://supabase.com/docs/guides/functions/regional-invocation">Edge Function 실행 리전</a>은 데이터베이스 저장 리전과 다를 수 있고, 지원·하위처리자의 처리도 별도로 구분합니다. <span class="pending">[게시 전 확정: 베타 실제 환경과 Edge·지원·하위처리 국가, 로그·복구 자료 보관 범위]</span></td></tr>
+          <tr><th scope="row">OpenAI OpCo, LLC</th><td>생성 요청 시 필요한 입력·문맥·이미지를 API로 전달합니다. 개인정보 연락처는 <a href="mailto:privacy@openai.com">privacy@openai.com</a>이며 <a href="https://openai.com/policies/data-processing-addendum/">데이터 처리 약정</a>과 <a href="https://openai.com/policies/sub-processor-list/">하위처리자 국가·목적 목록</a>을 확인할 수 있습니다. 학습·보관 조건은 제4항을 따릅니다. Global 프로젝트를 한 국가의 처리로 간주하지 않습니다. <span class="pending">[게시 전 확정: 현재 API·프로젝트에 적용되는 처리 국가 범위]</span></td></tr>
+          <tr><th scope="row">Google Gemini</th><td>생성 요청 시 필요한 입력·문맥·이미지를 유료 Developer API로 전달합니다. 학습·55일 안전 기록 조건은 제4항에서 안내합니다. <a href="https://cloud.google.com/terms/google-entity">계약법인 표</a>와 <a href="https://business.safety.google/processorterms/">처리자 약정</a>은 결제주소와 이용 조건에 따라 적용되며 약정 문의 연락처는 <a href="mailto:legal-notices@google.com">legal-notices@google.com</a>입니다. <span class="pending">[게시 전 확정: 실제 결제 프로필·적용 법인과 처리 국가]</span></td></tr>
+          <tr><th scope="row">PostHog, Inc.</th><td>앱·서버의 진단 처리 시 US Cloud로 전달하며 Logs는 현재 14일 보관합니다. 개인정보 연락처는 <a href="mailto:privacy@posthog.com">privacy@posthog.com</a>입니다. 기본 저장 위치는 미국이며 <a href="https://posthog.com/subprocessors">하위처리자 목록</a>에는 영국·독일·프랑스의 지원·보안 처리와 동적 전송 경로도 안내됩니다. <span class="pending">[게시 전 확정: 현재 제품·설정에 적용되는 추가 처리 국가와 이벤트 보관 조건]</span></td></tr>
+          <tr><th scope="row">Firebase Crashlytics</th><td>앱 실행·계정 상태 변경·오류 기록 및 SDK 전송 시 전달될 수 있습니다. 기록은 90일 후 운영 시스템·백업에서 삭제 절차를 시작합니다. <a href="https://firebase.google.com/terms/crashlytics">일반 Crashlytics 약관</a>은 아시아·태평양 지역의 제공자를 Google Asia Pacific Pte. Ltd.로 안내하며 개인정보 문의는 <a href="https://firebase.google.com/support/privacy/dpo">Firebase 개인정보 문의 경로</a>로 접수할 수 있습니다. <span class="pending">[게시 전 확정: 실제 적용 계약과 처리 국가]</span></td></tr>
+          <tr><th scope="row">문의 이메일(Google Gmail)</th><td>문의 전송·답변·메일 보관 과정에서 발신자 이메일 주소, 문의·신고 내용과 첨부파일을 Gmail로 전달합니다. <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>은 전 세계 서버에서 국외 처리할 수 있다고 안내합니다. 문의 보관기간과 Google의 후속 삭제는 제3항에서 구분합니다. <span class="pending">[게시 전 확정: 실제 계정·메일 전달 경로의 적용 법인·연락처·처리 국가와 국외 이전 근거]</span></td></tr>
         </tbody>
       </table>
       <p>위 표의 목적과 항목은 제2·4·5항과 함께 확인합니다. <span class="pending">[게시 전 확정: 서비스별 이전 근거, 이전 거부 방법·절차·효과]</span> 국외 이전 동의가 필요한 경우에는 그 내용을 별도로 안내하고 동의를 받습니다. 개인정보 처리방침 확인이나 가입 동의를 모든 국외 이전의 별도 동의로 간주하지 않습니다.</p>
@@ -198,21 +201,18 @@
       <p>외부 상담·분쟁조정이 필요한 경우 <a href="https://privacy.kisa.or.kr/">개인정보침해신고센터</a> 또는 <a href="https://www.kopico.go.kr/">개인정보분쟁조정위원회</a>를 이용할 수 있습니다.</p>
 
       <h2 id="changes">12. 시행과 변경 안내</h2>
-      <p>시행일: <span class="pending">[게시 전 확정]</span></p>
+      <p>시행일: 2026년 10월 8일</p>
       <p>확정한 베타 원문과 주소는 이용자가 동의한 내용을 확인할 수 있도록 보존합니다. 처리 내용이 변경되는 경우 변경 사항과 시행일을 안내하고, 별도 동의가 필요한 변경은 필요한 절차를 진행합니다. 계속 이용했다는 사실만으로 새로운 개인정보 처리에 동의한 것으로 취급하지 않습니다.</p>
 
       <aside class="document-notice" aria-label="게시 전 확인 사항">
         <p><strong>최종 게시 전에 확정할 사항</strong></p>
         <ul>
-          <li>실제 시행일</li>
           <li>목적별 법적 처리 근거, 동의 필요 여부와 거부 절차</li>
-          <li>확정한 14일·30일 기준과 법정 보관 분리의 실제 이행, 승인 철회 계정·기기 정보·백업의 정리 범위</li>
           <li>실제 외부 업체·계약 법인·국가·연락처·보관기간과 국외 이전 근거</li>
-          <li>Gemini 외 AI 제공자의 실제 상품·학습 조건, 운영자의 자체 학습 활용 여부</li>
+          <li>운영자의 자체 학습 활용 여부</li>
           <li>민감정보가 포함된 입력·생성 결과·신고의 처리 근거와 대응 절차</li>
-          <li>탈퇴 잔여 이미지의 매일 추적·재시도 이행, 기기 입력·외부 진단 기록의 삭제 범위와 절차</li>
           <li>가입 동의 전 SDK 처리와 실제 전송 항목의 적합성</li>
-          <li>위탁·재위탁 관리와 실제 운영 보호 조치</li>
+          <li>실제 적용 계약에 따른 위탁·제3자 제공 구분</li>
         </ul>
         <p>미확정 항목을 남긴 채 이 초안을 가입 동의 원문으로 사용하지 않습니다.</p>
       </aside>
@@ -235,7 +235,7 @@
         가명정보 활용·광고·결제·소셜 로그인 정책은 이번 베타의 처리로 가져오지 않음.
         법적 요구 확인: 개인정보 보호법 제15·18·21·22·23·28조의8·30조 및
         개인정보보호위원회 2026-04-24 개인정보 처리방침 작성지침 개정 안내.
-        이 문서는 Gemini 외 제공자의 학습 조건, 자체 학습 정책, 공급업체 DPA 체결 또는 원격 검증 완료를 선언하지 않음.
+        이 문서는 전체 적용 계약·처리 국가·자체 학습 활용 또는 원격 검증의 확인 완료를 선언하지 않음.
       -->
     </article>
   </main>
@@ -244,8 +244,8 @@
     <div class="container footer-inner">
       <div class="footer-links">
         <a href="/">Twohas 홈</a>
-        <a href="../terms/v1.html">이용약관 초안</a>
-        <a href="../beta/v1.html">베타 이용수칙 초안</a>
+        <a href="../terms/v1.html">이용약관</a>
+        <a href="../beta/v1.html">베타 이용수칙</a>
         <a href="../privacy-consent/v1.html">개인정보 수집·이용 동의문 초안</a>
         <a href="mailto:seosw@twohas.dev">개인정보 문의</a>
       </div>
