@@ -48,7 +48,7 @@
   <main class="page-content">
     <article class="container">
       <h1>개인정보 처리방침</h1>
-      <p class="effective-date">비공개 베타 검토용 초안 · 작성일: 2026년 10월 6일 · 수정일: 2026년 10월 8일 · 시행일: 2026년 10월 8일</p>
+      <p class="effective-date">비공개 베타 검토용 초안 · 작성일: 2026년 10월 6일 · 수정일: 2026년 10월 18일 · 시행일: 2026년 10월 8일</p>
 
       <aside class="document-notice" aria-label="초안 상태 안내">
         <p><strong>이 문서는 검토용 원문 초안이며, 아직 가입 동의에 사용하지 않습니다.</strong></p>
@@ -84,10 +84,17 @@
       <p>개인정보는 테스트 계정 발급, 로그인·가입, 이야기 이용, 앱 실행과 오류 발생, 이용자의 문의 과정에서 처리됩니다. 운영자의 계정 발급과 일부 진단 처리 등은 가입 동의 화면을 완료하기 전에도 발생합니다.</p>
       <p>개인정보는 안내한 목적과 적법한 처리 근거의 범위에서 이용합니다. 새로운 목적으로 이용하거나 제공할 필요가 생기면 법적 근거를 확인하고, 별도 동의 등 필요한 절차를 진행합니다.</p>
       <p>기기·앱 정보, 설치·진단 식별자, 접속 정보, 일부 사용 이벤트 등 외부 SDK와 서버 인프라가 자동 처리하는 항목은 <a href="#automatic">제8항</a>에서 구분합니다.</p>
-      <aside class="document-notice">
-        <p><strong>처리 근거 — 게시 전 확정</strong></p>
-        <p>각 목적에 적용할 동의·계약 이행 등 법적 근거를 확인하고, 동의를 받아 처리하는 항목과 동의 없이 처리할 수 있는 항목을 구분해야 합니다. 현재 코드에서 수집한다는 사실만으로 적법한 처리 근거가 확정되는 것은 아닙니다.</p>
-      </aside>
+      <h3 id="legal-basis">처리 근거</h3>
+      <table class="privacy-table">
+        <caption>목적별 개인정보 처리 근거(「개인정보 보호법」 제15조 제1항)</caption>
+        <tbody>
+          <tr><th scope="row">계정 발급·로그인</th><td>이용자의 베타 참여 요청에 따라 계정을 발급하고 로그인을 처리하는 조치로서, 계약 체결 과정에서 정보주체의 요청에 따른 조치를 이행하기 위해 필요한 처리입니다(제4호). 가입 동의 전부터 처리합니다.</td></tr>
+          <tr><th scope="row">가입·필수 동의, 이야기 제공·저장</th><td>가입 화면의 <a href="../privacy-consent/v1.html">개인정보 수집·이용 동의</a>에 따라 처리합니다(제1호).</td></tr>
+          <tr><th scope="row">비용·장애 진단, 자동 수집 정보</th><td>앱 비정상 종료·오류의 원인 파악, 장애 대응과 중복 요청 방지 등 안정적인 서비스 운영을 위한 운영자의 정당한 이익을 달성하기 위해 필요한 범위에서 처리합니다(제6호). 진단에 필요한 최소 항목으로 제한하며 광고·마케팅에 사용하지 않습니다. 가입 동의 전부터 처리하며, 항목·시점·보관기간과 거부 방법은 <a href="#automatic">제8항</a>에서 안내합니다.</td></tr>
+          <tr><th scope="row">문의·신고</th><td>이용자가 보낸 문의·신고와 권리 행사 요청에 답변하고 처리하기 위해 필요한 범위에서 처리합니다(제4호). 법령상 의무가 적용되는 기록은 해당 법령에 따릅니다(제2호).</td></tr>
+        </tbody>
+      </table>
+      <p><span class="pending">[게시 전 검토: 위 처리 근거에 대한 법률 검토]</span></p>
 
       <h2 id="retention">3. 보관기간</h2>
       <p>아래 기준에 따라 필요한 최소 기간 동안 보관하며, 보관기간이 끝나거나 처리 목적을 달성해 불필요해진 개인정보는 지체 없이 파기합니다. 법령상 보관 의무가 적용되는 항목은 아래의 별도 기준에 따라 일반 이용 정보와 분리해 보관합니다.</p>
@@ -133,7 +140,8 @@
       <p>Google Gemini를 통한 생성에는 활성 결제 계정에 연결된 Gemini Developer API 유료 Tier 1을 사용합니다. Google의 <a href="https://ai.google.dev/gemini-api/terms#paid-services">유료 API 약관</a>에 따라 입력과 생성 결과는 일반 모델 학습이나 제품 개선에 사용되지 않습니다. Unframe은 이용자의 입력·생성 결과를 학습·제품 개선용 데이터셋이나 로그 피드백으로 Google에 별도 공유하지 않습니다.</p>
       <p>Google은 안전·정책 위반 방지와 필요한 법적 공개를 위해 입력·문맥·응답을 55일 보관하며, 해당 기록은 정책 집행용 모델 학습에 사용될 수 있습니다. 자세한 내용은 <a href="https://ai.google.dev/gemini-api/docs/usage-policies">Google의 남용 모니터링 정책</a>에서 확인할 수 있습니다. 별도 학습용 공유를 하지 않는 방침이 이 기록의 보관·처리까지 중단한다는 뜻은 아닙니다.</p>
       <p>OpenAI의 <a href="https://developers.openai.com/api/docs/guides/your-data">공식 API 데이터 정책</a>에 따라 API 입력·생성 결과는 명시적으로 학습용 공유를 선택하지 않으면 모델 학습이나 개선에 사용되지 않습니다. Unframe의 배포 API 키를 발급한 조직에서는 피드백, 평가·미세조정 데이터, API 입출력 공유를 모두 비활성화하고 있습니다.</p>
-      <p>학습용 공유 설정과 API 데이터 보관은 구분합니다. OpenAI는 남용 모니터링 기록을 기본 최대 30일 보관하며 법률·위해 방지 목적의 예외가 있습니다. 현재 OpenAI 이야기 모델의 생성용 캐시는 최대 24시간 남을 수 있으며, 일부 이미지·파일은 안전 검토를 위해 보관될 수 있습니다. 운영자의 자체 학습 활용 여부는 별도로 확정해야 합니다.</p>
+      <p>학습용 공유 설정과 API 데이터 보관은 구분합니다. OpenAI는 남용 모니터링 기록을 기본 최대 30일 보관하며 법률·위해 방지 목적의 예외가 있습니다. 현재 OpenAI 이야기 모델의 생성용 캐시는 최대 24시간 남을 수 있으며, 일부 이미지·파일은 안전 검토를 위해 보관될 수 있습니다. </p>
+      <p><strong>운영자는 이용자의 입력과 생성 결과를 자체 AI 모델의 학습에 사용하지 않으며, 사용할 계획도 없습니다.</strong></p>
       <p>이 방침을 확인했다는 사실만으로 별도의 모델 학습이나 새로운 목적의 활용에 동의한 것으로 취급하지 않습니다. 별도 동의가 필요한 처리는 구분하여 안내합니다. 부적절한 생성 결과나 개인정보 포함이 의심되는 결과는 아래 문의 채널로 신고할 수 있습니다.</p>
       <h3>입력과 생성 결과의 공개 범위</h3>
       <p>이번 베타에는 계정 정보나 이용자가 입력·생성한 이야기를 다른 이용자에게 게시하는 기능이 없습니다. 생성 이미지는 비공개 저장소에서 기한이 있는 접근 주소로 제공합니다. 이 주소를 다른 사람에게 전달하면 유효기간 동안 이미지를 열 수 있으므로 공유에 주의하세요.</p>
@@ -155,19 +163,22 @@
       <p><span class="pending">[게시 전 확정: 위탁 계약상 처리 범위·보호 조치·재위탁 현황, 수탁자 점검과 삭제 요청 절차]</span></p>
 
       <h2 id="overseas">6. 개인정보의 국외 이전</h2>
-      <p>외부 서비스의 서버·처리 위치에 따라 개인정보가 국외에서 보관·처리될 수 있습니다. 국외 이전에 적용할 법적 근거와 필요한 공개·동의 절차는 실제 계약과 이용 조건을 확인해 정합니다.</p>
+      <p>운영자는 이용자와의 서비스 이용계약을 체결·이행하기 위해 필요한 개인정보의 처리위탁·보관을 위해 아래와 같이 개인정보를 국외로 이전합니다. 「개인정보 보호법」 제28조의8 제1항 제3호에 따라 이전 항목·국가·시기와 방법·이전받는 자·이용 목적과 보유기간·거부 방법을 이 방침에 공개하며, 국외 이전에 대한 별도 동의는 받지 않습니다.</p>
+      <p>이전은 각 서비스 이용 시 암호화된 네트워크 통신(HTTPS)으로 이루어집니다. 운영자는 같은 법 제28조의8 제4항에 따라 안전성 확보조치와 고충처리·분쟁해결에 관한 조치를 이전받는 자와의 약정 또는 해당 업체의 데이터 처리 약정으로 확인합니다.</p>
       <table class="privacy-table">
-        <caption>이전 시점·방법과 게시 전 확인할 사항</caption>
+        <caption>이전받는 자별 국가·항목·시기와 방법·목적·보유기간</caption>
         <tbody>
-          <tr><th scope="row">Supabase Pte. Ltd.</th><td>계정 발급·로그인·서비스 요청·데이터 저장 시 네트워크로 전달하며 Dev 데이터베이스의 저장 리전은 일본 도쿄입니다. 개인정보 연락처는 <a href="mailto:privacy@supabase.io">privacy@supabase.io</a>입니다. <a href="https://supabase.com/docs/guides/functions/regional-invocation">Edge Function 실행 리전</a>은 데이터베이스 저장 리전과 다를 수 있고, 지원·하위처리자의 처리도 별도로 구분합니다. <span class="pending">[게시 전 확정: 베타 실제 환경과 Edge·지원·하위처리 국가, 로그·복구 자료 보관 범위]</span></td></tr>
-          <tr><th scope="row">OpenAI OpCo, LLC</th><td>생성 요청 시 필요한 입력·문맥·이미지를 API로 전달합니다. 개인정보 연락처는 <a href="mailto:privacy@openai.com">privacy@openai.com</a>이며 <a href="https://openai.com/policies/data-processing-addendum/">데이터 처리 약정</a>과 <a href="https://openai.com/policies/sub-processor-list/">하위처리자 국가·목적 목록</a>을 확인할 수 있습니다. 학습·보관 조건은 제4항을 따릅니다. Global 프로젝트를 한 국가의 처리로 간주하지 않습니다. <span class="pending">[게시 전 확정: 현재 API·프로젝트에 적용되는 처리 국가 범위]</span></td></tr>
-          <tr><th scope="row">Google Gemini</th><td>생성 요청 시 필요한 입력·문맥·이미지를 유료 Developer API로 전달합니다. 학습·55일 안전 기록 조건은 제4항에서 안내합니다. <a href="https://cloud.google.com/terms/google-entity">계약법인 표</a>와 <a href="https://business.safety.google/processorterms/">처리자 약정</a>은 결제주소와 이용 조건에 따라 적용되며 약정 문의 연락처는 <a href="mailto:legal-notices@google.com">legal-notices@google.com</a>입니다. <span class="pending">[게시 전 확정: 실제 결제 프로필·적용 법인과 처리 국가]</span></td></tr>
-          <tr><th scope="row">PostHog, Inc.</th><td>앱·서버의 진단 처리 시 US Cloud로 전달하며 Logs는 현재 14일 보관합니다. 개인정보 연락처는 <a href="mailto:privacy@posthog.com">privacy@posthog.com</a>입니다. 기본 저장 위치는 미국이며 <a href="https://posthog.com/subprocessors">하위처리자 목록</a>에는 영국·독일·프랑스의 지원·보안 처리와 동적 전송 경로도 안내됩니다. <span class="pending">[게시 전 확정: 현재 제품·설정에 적용되는 추가 처리 국가와 이벤트 보관 조건]</span></td></tr>
-          <tr><th scope="row">Firebase Crashlytics</th><td>앱 실행·계정 상태 변경·오류 기록 및 SDK 전송 시 전달될 수 있습니다. 기록은 90일 후 운영 시스템·백업에서 삭제 절차를 시작합니다. <a href="https://firebase.google.com/terms/crashlytics">일반 Crashlytics 약관</a>은 아시아·태평양 지역의 제공자를 Google Asia Pacific Pte. Ltd.로 안내하며 개인정보 문의는 <a href="https://firebase.google.com/support/privacy/dpo">Firebase 개인정보 문의 경로</a>로 접수할 수 있습니다. <span class="pending">[게시 전 확정: 실제 적용 계약과 처리 국가]</span></td></tr>
-          <tr><th scope="row">문의 이메일(Google Gmail)</th><td>문의 전송·답변·메일 보관 과정에서 발신자 이메일 주소, 문의·신고 내용과 첨부파일을 Gmail로 전달합니다. <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>은 전 세계 서버에서 국외 처리할 수 있다고 안내합니다. 문의 보관기간과 Google의 후속 삭제는 제3항에서 구분합니다. <span class="pending">[게시 전 확정: 실제 계정·메일 전달 경로의 적용 법인·연락처·처리 국가와 국외 이전 근거]</span></td></tr>
+          <tr><th scope="row">Supabase Pte. Ltd.</th><td><strong>목적:</strong> 인증, 데이터베이스, 서버 기능, 이미지 저장. <strong>항목:</strong> 제2항의 계정·가입·동의, 이야기·이미지, 생성 사용량과 요청 정보. <strong>시기와 방법:</strong> 계정 발급·로그인·서비스 요청·데이터 저장 시 네트워크로 전송. <strong>보유기간:</strong> 제3항의 기간 또는 위탁 계약 종료 시까지. <strong>국가:</strong> Dev 데이터베이스는 일본(도쿄) 리전입니다. 개인정보 연락처는 <a href="mailto:privacy@supabase.io">privacy@supabase.io</a>입니다. <a href="https://supabase.com/docs/guides/functions/regional-invocation">Edge Function 실행 리전</a>은 데이터베이스 저장 리전과 다를 수 있고, 지원·하위처리자의 처리도 별도로 구분합니다. <span class="pending">[게시 전 확정: 베타 실제 환경과 Edge·지원·하위처리 국가, 로그·복구 자료 보관 범위]</span></td></tr>
+          <tr><th scope="row">OpenAI OpCo, LLC</th><td><strong>목적:</strong> 이야기·이미지 생성. <strong>항목:</strong> 제4항의 입력·문맥·이미지. <strong>시기와 방법:</strong> 해당 제공자의 모델로 생성을 요청할 때 API로 전송. <strong>보유기간:</strong> 남용 모니터링 기록 기본 최대 30일, 생성용 캐시 최대 24시간(제4항). <strong>국가:</strong> 미국 등. 개인정보 연락처는 <a href="mailto:privacy@openai.com">privacy@openai.com</a>이며 <a href="https://openai.com/policies/data-processing-addendum/">데이터 처리 약정</a>과 <a href="https://openai.com/policies/sub-processor-list/">하위처리자 국가·목적 목록</a>을 확인할 수 있습니다. 학습·보관 조건은 제4항을 따릅니다. Global 프로젝트를 한 국가의 처리로 간주하지 않습니다. <span class="pending">[게시 전 확정: 현재 API·프로젝트에 적용되는 처리 국가 범위]</span></td></tr>
+          <tr><th scope="row">Google Gemini</th><td><strong>목적:</strong> 이야기·이미지 생성. <strong>항목:</strong> 제4항의 입력·문맥·이미지. <strong>시기와 방법:</strong> 해당 제공자의 모델로 생성을 요청할 때 유료 Developer API로 전송. <strong>보유기간:</strong> 안전·정책 위반 방지 기록 55일(제4항). <strong>국가:</strong> 미국 등 Google 시설 소재 국가. <a href="https://cloud.google.com/terms/google-entity">계약법인 표</a>와 <a href="https://business.safety.google/processorterms/">처리자 약정</a>은 결제주소와 이용 조건에 따라 적용되며 약정 문의 연락처는 <a href="mailto:legal-notices@google.com">legal-notices@google.com</a>입니다. <span class="pending">[게시 전 확정: 실제 결제 프로필·적용 법인과 처리 국가]</span></td></tr>
+          <tr><th scope="row">PostHog, Inc.</th><td><strong>목적:</strong> 앱·서버 장애 진단. <strong>항목:</strong> 제8항의 진단 로그와 식별자. <strong>시기와 방법:</strong> 앱 실행 중과 서버 처리 시 네트워크로 전송. <strong>보유기간:</strong> Logs 14일. <strong>국가:</strong> 미국(US Cloud). 개인정보 연락처는 <a href="mailto:privacy@posthog.com">privacy@posthog.com</a>입니다. 기본 저장 위치는 미국이며 <a href="https://posthog.com/subprocessors">하위처리자 목록</a>에는 영국·독일·프랑스의 지원·보안 처리와 동적 전송 경로도 안내됩니다. <span class="pending">[게시 전 확정: 현재 제품·설정에 적용되는 추가 처리 국가와 이벤트 보관 조건]</span></td></tr>
+          <tr><th scope="row">Firebase Crashlytics</th><td><strong>목적:</strong> 앱 비정상 종료·오류 진단. <strong>항목:</strong> 제8항의 크래시·오류 정보와 식별자. <strong>시기와 방법:</strong> 앱 실행 중 오류가 발생하거나 SDK가 기록을 전송할 때 네트워크로 전송. <strong>보유기간:</strong> 90일 후 운영 시스템·백업에서 삭제 절차 시작. <strong>국가:</strong> 미국 등 Google 시설 소재 국가. <a href="https://firebase.google.com/terms/crashlytics">일반 Crashlytics 약관</a>은 아시아·태평양 지역의 제공자를 Google Asia Pacific Pte. Ltd.로 안내하며 개인정보 문의는 <a href="https://firebase.google.com/support/privacy/dpo">Firebase 개인정보 문의 경로</a>로 접수할 수 있습니다. <span class="pending">[게시 전 확정: 실제 적용 계약과 처리 국가]</span></td></tr>
+          <tr><th scope="row">문의 이메일(Google Gmail)</th><td><strong>목적:</strong> 문의·신고 수신과 답변. <strong>보유기간:</strong> 제3항의 처리 완료 후 30일. 문의 전송·답변·메일 보관 과정에서 발신자 이메일 주소, 문의·신고 내용과 첨부파일을 Gmail로 전달합니다. <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>은 전 세계 서버에서 국외 처리할 수 있다고 안내합니다. 문의 보관기간과 Google의 후속 삭제는 제3항에서 구분합니다. <span class="pending">[게시 전 확정: 실제 계정·메일 전달 경로의 적용 법인·연락처·처리 국가]</span></td></tr>
         </tbody>
       </table>
-      <p>위 표의 목적과 항목은 제2·4·5항과 함께 확인합니다. <span class="pending">[게시 전 확정: 서비스별 이전 근거, 이전 거부 방법·절차·효과]</span> 국외 이전 동의가 필요한 경우에는 그 내용을 별도로 안내하고 동의를 받습니다. 개인정보 처리방침 확인이나 가입 동의를 모든 국외 이전의 별도 동의로 간주하지 않습니다.</p>
+      <p>위 표의 목적과 항목은 제2·4·5항과 함께 확인합니다.</p>
+      <h3 id="overseas-refusal">국외 이전의 거부</h3>
+      <p>위 국외 이전은 계정·이야기·AI 생성과 장애 대응에 필수이므로 일부만 거부하고 서비스를 이용할 수 없습니다. 이전을 원하지 않으면 가입하지 않거나 앱에서 회원 탈퇴를 요청할 수 있으며, 이 경우 비공개 베타를 이용할 수 없습니다. 가입 전 계정의 삭제나 진단 기록에 관한 요청은 <a href="mailto:seosw@twohas.dev">seosw@twohas.dev</a>로 접수할 수 있습니다. 앞으로 서비스 제공에 필요하지 않은 국외 이전이나 제3자 제공이 생기면 별도로 안내하고 동의를 받습니다.</p>
 
       <h2 id="deletion">7. 탈퇴와 개인정보 파기</h2>
       <p>회원 탈퇴는 앱의 계정 화면에서 요청할 수 있습니다. 요청자의 본인 계정인지 확인한 뒤 인증 계정과 연결된 가입·승인 기록, 이야기 입력·생성 결과·기억과 생성 이미지를 지체 없이 삭제하는 기준을 적용합니다. 이미지 삭제에 실패해도 탈퇴를 진행하고 운영 담당자가 매일 잔여 대상을 확인·재시도하며 완료 결과를 기록합니다.</p>
@@ -176,8 +187,17 @@
 
       <h2 id="automatic">8. 자동 수집과 기기 저장</h2>
       <p>앱은 로그인 세션, 미전송 이야기 입력 초안·최근 입력과 앱 설정을 기기에 저장합니다. 로그아웃과 탈퇴 시 앱이 관리하는 저장값과 메모리 캐시를 정리합니다. 로그아웃은 현재 로그인 세션을 대상으로 하며 모든 기기의 세션이나 이미 발급된 접근 토큰이 즉시 무효화된다는 뜻은 아닙니다.</p>
-      <p>PostHog와 Firebase Crashlytics는 앱 시작 시 초기화되며 가입 동의 전에도 정보를 처리할 수 있습니다. Crashlytics에는 크래시·오류·스택, 앱 버전·플랫폼과 로그인 계정 식별자가 전달됩니다. PostHog에는 요청 식별자·처리 결과·오류 종류·소요시간 등의 운영 로그를 보내며, iOS에서 반복 터치와 같은 일부 이용 이벤트도 자동 처리될 수 있습니다. 현재 앱에는 이용자가 진단 수집을 끄는 별도 설정이 없습니다.</p>
-      <p><span class="pending">[게시 전 확정: 자동 수집 항목·근거·시점·보관기간, 거부 방법과 효과, 쿠키·유사 식별 기술 사용 여부]</span> 자동 수집 중단이나 기기 저장 정보에 관한 문의는 <a href="mailto:seosw@twohas.dev">seosw@twohas.dev</a>로 접수할 수 있습니다.</p>
+      <h3 id="diagnostics">진단 정보의 자동 수집</h3>
+      <p>앱의 비정상 종료와 오류를 파악해 안정적으로 서비스를 운영하기 위해, 아래 정보를 <strong>앱을 실행한 시점부터, 가입 동의 전을 포함해</strong> 자동으로 수집합니다. 처리 근거는 <a href="#legal-basis">제2항</a>의 정당한 이익이며, 광고·마케팅이나 이용자 성향 분석에 사용하지 않습니다.</p>
+      <table class="privacy-table">
+        <caption>자동 수집하는 진단 정보</caption>
+        <tbody>
+          <tr><th scope="row">Firebase Crashlytics</th><td><strong>항목:</strong> 크래시·오류 내용과 스택, 앱 버전·빌드, 기기 모델·운영체제 버전, SDK가 생성하는 설치 식별자, 로그인 후 계정 식별자. <strong>보관기간:</strong> 90일 후 삭제 절차 시작.</td></tr>
+          <tr><th scope="row">PostHog</th><td><strong>항목:</strong> 요청 식별자, 처리 결과·오류 종류·소요 시간 등의 운영 로그, 앱 버전·실행 환경, SDK가 생성하는 익명 식별자(로그인 후에는 계정 식별자와 연결, 로그아웃 시 새 익명 식별자로 교체). <strong>보관기간:</strong> Logs 14일.</td></tr>
+        </tbody>
+      </table>
+      <p>이야기 입력·생성 결과의 원문, 비밀번호, 인증 토큰은 진단 정보에 넣지 않는 것을 원칙으로 합니다. 앱은 쿠키를 사용하지 않으며, 진단 SDK가 위 식별자를 기기에 저장합니다. <span class="pending">[게시 전 확정: iOS의 반복 터치 등 PostHog 자동 이벤트를 끄는 앱 설정 반영 여부, 접속 IP 처리 범위, 실제 전송 내용에 원문·토큰이 없는지 확인]</span></p>
+      <p><strong>거부 방법과 효과:</strong> 현재 앱에는 진단 수집을 끄는 설정이 없으며, 앱을 삭제하면 이후의 수집이 중단됩니다. 이미 전송된 진단 기록의 삭제나 처리정지는 <a href="mailto:seosw@twohas.dev">seosw@twohas.dev</a>로 요청할 수 있으며, 운영자는 해당 업체가 지원하는 범위에서 처리하고 결과를 안내합니다.</p>
       <p>현재 앱의 계정·이야기 기능은 카메라·마이크·사진첩·위치 접근을 요구하는 방식으로 구현되어 있지 않습니다. 이를 모든 외부 SDK의 자동 처리 정보를 수집하지 않는다는 뜻으로 해석하지 않습니다.</p>
 
       <h2 id="rights">9. 이용자의 권리와 행사 방법</h2>
@@ -207,11 +227,10 @@
       <aside class="document-notice" aria-label="게시 전 확인 사항">
         <p><strong>최종 게시 전에 확정할 사항</strong></p>
         <ul>
-          <li>목적별 법적 처리 근거, 동의 필요 여부와 거부 절차</li>
-          <li>실제 외부 업체·계약 법인·국가·연락처·보관기간과 국외 이전 근거</li>
-          <li>운영자의 자체 학습 활용 여부</li>
+          <li>제2항 처리 근거의 법률 검토</li>
+          <li>실제 외부 업체·계약 법인·처리 국가·연락처·보관기간</li>
           <li>민감정보가 포함된 입력·생성 결과·신고의 처리 근거와 대응 절차</li>
-          <li>가입 동의 전 SDK 처리와 실제 전송 항목의 적합성</li>
+          <li>제8항에 적은 진단 항목과 실제 SDK 전송 내용의 일치</li>
           <li>실제 적용 계약에 따른 위탁·제3자 제공 구분</li>
         </ul>
         <p>미확정 항목을 남긴 채 이 초안을 가입 동의 원문으로 사용하지 않습니다.</p>
@@ -235,7 +254,9 @@
         가명정보 활용·광고·결제·소셜 로그인 정책은 이번 베타의 처리로 가져오지 않음.
         법적 요구 확인: 개인정보 보호법 제15·18·21·22·23·28조의8·30조 및
         개인정보보호위원회 2026-04-24 개인정보 처리방침 작성지침 개정 안내.
-        이 문서는 전체 적용 계약·처리 국가·자체 학습 활용 또는 원격 검증의 확인 완료를 선언하지 않음.
+        2026-10-18 수정: 자체 학습 미사용(product.md 2026-10-08 확정) 명시, 국외 이전 근거를 제28조의8 제1항 제3호로 정리,
+        진단 정보의 처리 근거(제15조 제1항 제6호)·시점·항목·보관기간·거부 방법 기재. 참고 사례: 당근·Dialogos·오브젝트 처리방침.
+        이 문서는 전체 적용 계약·처리 국가 또는 원격 검증의 확인 완료를 선언하지 않음.
       -->
     </article>
   </main>
